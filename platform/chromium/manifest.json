@@ -1,0 +1,27 @@
+{
+  "name": "TSU onTime",
+  "description": "Shows Tomsk State University class schdeule",
+  "author": "Doesn't matter",
+  "version": "0.269",
+  "manifest_version": 3,
+  "options_page": "dashboard.html",
+  "background": {
+	  "service_worker": "/js/background.js"
+  },
+  "permissions": ["storage", "alarms"], 
+  "action": {
+  "default_popup": "popup.html",
+  "default_icon": {
+      "16": "/assets/ico16.png",
+      "32": "/assets/ico32.png",
+      "48": "/assets/ico48.png",
+      "128":"/assets/ico128.png"
+  	}
+  },
+  "icons": {
+      "16": "/assets/ico16.png",
+      "32": "/assets/ico32.png",
+      "48": "/assets/ico48.png",
+      "128":"/assets/ico128.png"
+  }
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./css/dashboard.css">
+    <script type="text/javascript" src="./lib/dayjs.min.js"></script>
+    <script type="text/javascript" src="./js/commonVar.js"></script>
+    <script type="text/javascript" src="./lib/jquery.min.js"></script>
+    <script type="text/javascript" src="./lib/jquery.flip.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="header">
+        <h1>Dashboard</h1>
+        </div>
+    </header>
+
+    <div id="cards">
+    <div id="container">
+    
+    <div class="studentB box-container">
+        <h1>Select Group</h1>
+        <select id="faculties"></select>
+        <select id="groups" style="display: none;"></select>
+    </div>
+    <div class="profB box-container">
+        <h1>Select Name</h1>
+        <select id="professors"></select>
+    </div>
+    </div>
+    <img id="exchange" src="./assets/exc.png">
+    <button id="submit">Save</button>
+    </div>
+    <script type="text/javascript" src="./js/dashboard.js"></script>
+</body>
+</html>

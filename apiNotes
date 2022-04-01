@@ -1,0 +1,8 @@
+List of APIs:
+Faculties: https://intime.tsu.ru/api/web/v1/faculties
+Professors: https://intime.tsu.ru/api/web/v1/professors
+Buildings: https://intime.tsu.ru/api/web/v1/buildings
+Audience of Buildings(dependent): https://intime.tsu.ru/api/web/v1/buildings/{building ID}/audiences?id={audience ID}&dateFrom={date}&dateTo={date}
+Groups of faculties(dependent): https://intime.tsu.ru/api/web/v1/faculties/{faculty ID}/groups 
+Class of faculties(dependent): https://intime.tsu.ru/api/web/v1/faculties/{faculty ID}/groups?id={group id}&dateFrom={date}&dateTo={date}
+Class of professors(dependent): https://intime.tsu.ru/api/web/v1/schedule/professor?id={professorid}&dateFrom={date}&dateTo={date}
