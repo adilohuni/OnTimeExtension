@@ -16,7 +16,7 @@ OnTIme extension shows Class schedule of Tomsk State University on your browser.
 ## Features
 
 - Class Schedule for student and professors.
-- English transliteration of Instructor names.
+- English transliteration of Instructor's names.
 - Click to enter the class(Only for few).
 - Supports Chrome and Firefox.
 
