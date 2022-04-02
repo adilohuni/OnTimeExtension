@@ -3,11 +3,16 @@
 
 
 # TSU OnTime 
-
-           
+          
 OnTIme extension shows Class schedule of Tomsk State University on your browser.
-#
 
+
+<p align="center">
+<a href="https://addons.mozilla.org/en-US/firefox/addon/tsu-ontime/"><img src="https://github.com/adilohuni/OnTimeExtension/raw/master/img/ff.png" alt="Get OnTime for Firefox"></a> 
+<a href="https://chrome.google.com/webstore/detail/ontime/ihkpedaieglliifcfbnhnlmpcpjmmfjb"><img src="https://github.com/adilohuni/OnTimeExtension/raw/master/img/chr.png" alt="Get OnTime for Chromium" height="80"></a>
+</p>
+
+***
 ## Features
 
 - Class Schedule for student and professors.
@@ -18,7 +23,7 @@ OnTIme extension shows Class schedule of Tomsk State University on your browser.
 
 ## Screenshots
 
-![App Screenshot](https://github.com/adilohuni/OnTimeExtension/blob/master/src/assets/screenshot.jpg)
+![App Screenshot](https://github.com/adilohuni/OnTimeExtension/raw/master/img/screenshot.jpg)
 
 
 ## Installation
