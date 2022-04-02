@@ -31,7 +31,7 @@ const titler = (titleid, title)=> {
 //Nickname
 const nicks = (titleid, title)=> {
   atjs('./assets/resources/nicknames.json', titleid)
-  return title;
+  return prof(titleid, title);
 }
 //Return Class type
 const subjecttype= (cltype, subtype)=>{
