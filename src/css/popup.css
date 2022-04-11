@@ -32,23 +32,32 @@ a {
 html {
   scrollbar-width: none;
 }
+
 body {
   font-size: 14px;
   height: 725px;
-  background: hsl(291, 93%, 12%);
-  background-image: linear-gradient(
-    270deg,
-    hsl(240deg 100% 58%) 0%,
-    hsl(275deg 100% 44%) 14%,
-    hsl(292deg 100% 38%) 29%,
-    hsl(307deg 100% 37%) 43%,
-    hsl(318deg 100% 39%) 57%,
-    hsl(326deg 100% 40%) 71%,
-    hsl(332deg 100% 40%) 86%,
-    hsl(336deg 100% 39%) 100%
-  );
+
   font-family: Arial, Helvetica, sans-serif;
+
+  margin-top: 13.5rem;
+
+  color: #999;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("../assets/square.png") repeat 0px 0px;
+
+  -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
+  -moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
+  -o-animation:      bg-scrolling-reverse .92s infinite; /* Opera 12+ */
+  animation:         bg-scrolling-reverse .92s infinite; /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function:    linear;
+  -o-animation-timing-function:      linear;
+  animation-timing-function:         linear;
+
+
 }
+
 
 .container ul {
   list-style: none;
@@ -67,18 +76,16 @@ body {
   width: 1px;
   height: 100%;
   position: absolute;
-  border-left: 2px dashed #000000;
+  border-left: 2px dashed #ffffff;
 
 }
 
 .container ul li {
   position: relative;
   margin-left: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
   padding: 14px;
   border-radius: 6px;
   width: 250px;
-  box-shadow: 0 0 4px rgba(0, 0, 0, .12), 0 2px 2px rgba(0, 0, 0, .08)
 }
 
 .container ul li:not(:first-child) {
@@ -131,7 +138,7 @@ body {
 
 .container span.number {
   height: 100%;
-  color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
 }
 
 .container span.number span {
@@ -151,48 +158,19 @@ body {
 
 .flow {
   display: inline-block;
-  background-image: linear-gradient(50deg,
-          hsl(240deg 100% 58%) 1%,
-          hsl(243deg 76% 53%) 43%,
-          hsl(245deg 66% 47%) 50%,
-          hsl(247deg 62% 41%) 51%,
-          hsl(249deg 58% 36%) 51%,
-          hsl(251deg 53% 30%) 49%,
-          hsl(254deg 47% 25%) 49%,
-          hsl(256deg 38% 19%) 50%,
-          hsl(259deg 25% 14%) 57%,
-          hsl(0deg 0% 10%) 99%);
-  color: rgb(255, 255, 255);
-  border-radius: 7px;
-  margin: 2%;
-  padding: 4%;
-}
-
-.incld {
-  color: rgb(255, 255, 255);
   width: auto;
-  background-image: linear-gradient(50deg,
-          hsl(240deg 100% 58%) 1%,
-          hsl(243deg 76% 53%) 43%,
-          hsl(245deg 66% 47%) 50%,
-          hsl(247deg 62% 41%) 51%,
-          hsl(249deg 58% 36%) 51%,
-          hsl(251deg 53% 30%) 49%,
-          hsl(254deg 47% 25%) 49%,
-          hsl(256deg 38% 19%) 50%,
-          hsl(259deg 25% 14%) 57%,
-          hsl(0deg 0% 10%) 99%);
-  display: inline-block;
+  background-color: hsla(0, 0%, 0%, 0.685);
+  color: rgb(255, 255, 255);
   border-radius: 7px;
   margin: 2%;
   padding: 4%;
-
+  box-shadow: 0 0 4px rgba(26, 112, 161, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
 }
 
 .date {
   font-size: xx-large;
-  background: #0e8dbc;
-  color: white;
+  background-color: hsla(0, 0%, 0%, 0.685);
+  color: rgb(255, 255, 255);
   text-shadow:
       1px 0px 1px rgb(36, 36, 36), 0px 1px 1px rgb(77, 77, 77),
       2px 1px 1px rgb(36, 36, 36), 1px 2px 1px rgb(77, 77, 77),
@@ -201,17 +179,6 @@ body {
       5px 4px 1px rgb(36, 36, 36), 4px 5px 1px rgb(77, 77, 77),
       6px 5px 1px rgb(36, 36, 36), 5px 6px 1px rgb(77, 77, 77),
       7px 6px 1px rgb(36, 36, 36);
-  background-image: linear-gradient(50deg,
-      hsl(240deg 100% 58%) 1%,
-      hsl(243deg 76% 53%) 43%,
-      hsl(245deg 66% 47%) 50%,
-      hsl(247deg 62% 41%) 51%,
-      hsl(249deg 58% 36%) 51%,
-      hsl(251deg 53% 30%) 49%,
-      hsl(254deg 47% 25%) 49%,
-      hsl(256deg 38% 19%) 50%,
-      hsl(259deg 25% 14%) 57%,
-      hsl(0deg 0% 10%) 99%);
 }
 
 #tobtn {
@@ -222,10 +189,10 @@ body {
   z-index: 99;
   font-size: 16px;
   font-weight: 700;
-  color: hsla(0, 0%, 0%, 0.7);
+  color: hsl(0, 0%, 100%);
   cursor: pointer;
   border-radius: 12px;
-  background-color: hsla(0, 0%, 100%, 0.7);
+  background-color: hsla(0, 0%, 0%, 0.7);
   width: 55px;
   height: 55px;
   text-align: center;
@@ -246,12 +213,13 @@ body {
   text-align: right;
 }
 .logo {
+  top:3%;
+  left: 2%;
   width: 40px;
   height: 40px;
   box-shadow: 0 0 40 40;
   margin-top: 2%;
   fill: none;
-  filter: invert(100%);
   position: fixed;
   z-index: 99;
   cursor: pointer;
@@ -266,6 +234,7 @@ body {
   right: 1%;
   height: 40px;
   width: 40px;
+  filter: invert();
   background-color: hsl(0, 0%, 100%);
   fill:none;
   position: fixed;
@@ -279,12 +248,11 @@ body {
   text-align: center;
 }
 #navDay{
-  display: none;
   align-content: center;
-  display: block;
   list-style-type: none;
   position: fixed;
-  background-color: hsla(0, 0%, 100%, 0.712);
+  background-color: hsla(0, 0%, 0%, 0.712);
+  cursor: pointer;
   border-radius: 8px;
   width: 55px;
   top: 13%;
@@ -294,7 +262,7 @@ body {
   -webkit-font-smoothing: antialiased;
   font-weight: 700;
   color: #000;
-  background-color: hsla(0, 0%, 100%, 0.705);
+  background-color: hsl(0, 0%, 100%);
   width: 45px;
   height: 45px;
   z-index: 99;
@@ -302,6 +270,7 @@ body {
   margin-left: 8%;
   margin-top: 5px;
   margin-bottom: 5px;
+  box-shadow: 0 0 4px rgba(26, 112, 161, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
 }
 
 #guide_arrow {

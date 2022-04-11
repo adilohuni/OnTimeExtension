@@ -97,7 +97,7 @@ const constructTimeline =(list)=> {
 
       if (x[0] != "EMPTY") {
         dater =
-          '<li><div class="incld"><span></span>' +
+          '<li><div class="flow"><span></span>' +
           '<div class="' +
           x[1] +
           ' title">' +
