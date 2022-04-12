@@ -1,7 +1,7 @@
 {   
   "manifest_version": 2,
   "name": "TSU onTime",
-  "version": "0.269",
+  "version": "0.369",
   "description": "Shows Tomsk State University class schdeule",
   "author": "Doesn't matter",
   "options_ui": {

@@ -2,7 +2,7 @@
   "name": "TSU onTime",
   "description": "Shows Tomsk State University class schdeule",
   "author": "Doesn't matter",
-  "version": "0.269",
+  "version": "0.369",
   "manifest_version": 3,
   "options_page": "dashboard.html",
   "background": {
