@@ -43,5 +43,7 @@ browser.storage.onChanged.addListener(function (changes, namespace) {
 // Refresh local data in periodic measures
 browser.alarms.create('refresh', { periodInMinutes: 60*6 });
 browser.alarms.onAlarm.addListener((alarm) => {
+    startOfWeek = dayjs().day(0).format('YYYY-MM-DD')
+    endOfWeek = dayjs().day(6).format('YYYY-MM-DD')
     loader();
 });

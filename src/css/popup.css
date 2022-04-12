@@ -84,7 +84,7 @@ body {
   position: relative;
   margin-left: 30px;
   padding: 14px;
-  border-radius: 6px;
+  border-radius: 38px;
   width: 250px;
 }
 
@@ -159,9 +159,8 @@ body {
 .flow {
   display: inline-block;
   width: auto;
-  background-color: hsla(0, 0%, 0%, 0.685);
-  color: rgb(255, 255, 255);
-  border-radius: 7px;
+  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  color: rgb(255, 255, 255);
+  border-radius: 38px;
   margin: 2%;
   padding: 4%;
   box-shadow: 0 0 4px rgba(26, 112, 161, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
@@ -169,8 +168,7 @@ body {
 
 .date {
   font-size: xx-large;
-  background-color: hsla(0, 0%, 0%, 0.685);
-  color: rgb(255, 255, 255);
+  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);  color: rgb(255, 255, 255);
   text-shadow:
       1px 0px 1px rgb(36, 36, 36), 0px 1px 1px rgb(77, 77, 77),
       2px 1px 1px rgb(36, 36, 36), 1px 2px 1px rgb(77, 77, 77),
@@ -196,7 +194,9 @@ body {
   width: 55px;
   height: 55px;
   text-align: center;
-  border: 1px;
+  border-radius: 38px;
+  cursor: pointer;
+  box-shadow: 0 0 4px rgba(26, 112, 161, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
 }
 
 .title {
@@ -225,11 +225,12 @@ body {
   cursor: pointer;
   background-color: hsla(0, 0%, 0%, 0.7);
   padding: 2%;
-  border-radius: 8px;
+  border-radius: 22px;
 
 }
 
 #settings_ico {
+  -webkit-font-smoothing: antialiased;
   top:3%;
   right: 1%;
   height: 40px;
@@ -241,7 +242,7 @@ body {
   z-index: 99;
   cursor: pointer;
   padding: 1%;
-  border-radius: 8px;
+  border-radius: 22px;
   opacity: 0.7;
 }
 .centertext{
@@ -253,7 +254,7 @@ body {
   position: fixed;
   background-color: hsla(0, 0%, 0%, 0.712);
   cursor: pointer;
-  border-radius: 8px;
+  border-radius: 22px;
   width: 55px;
   top: 13%;
 }
@@ -266,8 +267,8 @@ body {
   width: 45px;
   height: 45px;
   z-index: 99;
-  border-radius: 8px;
-  margin-left: 8%;
+  border-radius: 50px;
+  margin-left: 5%;
   margin-top: 5px;
   margin-bottom: 5px;
   box-shadow: 0 0 4px rgba(26, 112, 161, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
@@ -285,5 +286,6 @@ body {
   height: 50px;
   top: 3%;
   right: 14%;
+  filter: grayscale();
   opacity: 0.9;
 }
