@@ -74,10 +74,16 @@ body {
 .container ul:before {
   content: '';
   width: 1px;
+  left: 100px;
   height: 100%;
   position: absolute;
+<<<<<<< HEAD
   border-left: 2px dashed #d79921;
   left: 100px;
+=======
+  border-left: 2px dashed #000000;
+
+>>>>>>> ba7b2b1c2e0cbf29724cdbeb833b23e0c8be79b4
 }
 
 .container ul li {
