@@ -13,8 +13,8 @@ const fetchSave = async (aurl) => {
 }
 
 const initprop = (props)=>{
-    startOfWeek = dayjs().day(0).format('YYYY-MM-DD');
-    endOfWeek = dayjs().day(6).format('YYYY-MM-DD');
+    startOfWeek = dayjs().day(0).format('YYYY-MM-DD')
+    endOfWeek = dayjs().day(6).format('YYYY-MM-DD')
     group = props.id
     type = props.type
     if(type=="student"){
@@ -45,8 +45,6 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
 // Refresh local data in periodic measures
 chrome.alarms.create('refresh', { periodInMinutes: 60*6 });
 chrome.alarms.onAlarm.addListener((alarm) => {
-    console.log(alarm);
-    console.log("Refreshing json");
 
     loader();
 });
