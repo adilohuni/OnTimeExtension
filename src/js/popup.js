@@ -295,6 +295,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //Storage Listner
 if(isChromium){
+  console.log(":Client x0f3a chrome")
   chrome.storage.onChanged.addListener((changes, namespace)=>{
     if('jsonData' in changes){
       pushingtopage();
@@ -302,6 +303,7 @@ if(isChromium){
   })
 }
 else if(isFirefox){
+  console.log(":Client x0f3a firefox")
   browser.storage.onChanged.addListener((changes, namespace)=>{
     if('jsonData' in changes){
       pushingtopage();

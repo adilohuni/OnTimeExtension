@@ -44,7 +44,8 @@ body {
   color: #999;
   text-align: center;
   /* img size is 50x50 */
-  background: url("../assets/square.png") repeat 0px 0px;
+
+  background: #282828;
 
   -webkit-animation: bg-scrolling-reverse .92s infinite; /* Safari 4+ */
   -moz-animation:    bg-scrolling-reverse .92s infinite; /* Fx 5+ */
@@ -54,7 +55,6 @@ body {
   -moz-animation-timing-function:    linear;
   -o-animation-timing-function:      linear;
   animation-timing-function:         linear;
-
 
 }
 
@@ -76,15 +76,17 @@ body {
   width: 1px;
   height: 100%;
   position: absolute;
-  border-left: 2px dashed #ffffff;
-
+  border-left: 2px dashed #d79921;
+  left: 100px;
 }
 
 .container ul li {
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.12), 0 2px 2px rgba(255, 255, 255, 0.08);
+  background: #a89984;
   position: relative;
   margin-left: 30px;
   padding: 14px;
-  border-radius: 38px;
+  border-radius: 12px;
   width: 250px;
 }
 
@@ -95,7 +97,7 @@ body {
 .container ul li>span {
   width: 2px;
   height: 100%;
-  background: rgb(0, 0, 0);
+  background: #fbf1c7;
   left: -30px;
   top: 0;
   position: absolute;
@@ -107,9 +109,9 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid rgb(0, 0, 0);
+  border: 2px solid rgb(255, 255, 255);
   position: absolute;
-  background: #ffffff;
+  background: #f38019;
   left: -5px;
   top: 0;
 }
@@ -138,7 +140,7 @@ body {
 
 .container span.number {
   height: 100%;
-  color: rgb(0, 0, 0);
+  color: #eddbb2;
 }
 
 .container span.number span {
@@ -159,16 +161,18 @@ body {
 .flow {
   display: inline-block;
   width: auto;
-  background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);  color: rgb(255, 255, 255);
-  border-radius: 38px;
+  color: #504945;
+  background: #fbf1c7;
+  border-radius: 18px;
   margin: 2%;
   padding: 4%;
-  box-shadow: 0 0 4px rgba(26, 112, 161, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
 }
 
 .date {
   font-size: xx-large;
-  background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);  color: rgb(255, 255, 255);
+  background: #928374;
+  color: #eddbb2;
   text-shadow:
       1px 0px 1px rgb(36, 36, 36), 0px 1px 1px rgb(77, 77, 77),
       2px 1px 1px rgb(36, 36, 36), 1px 2px 1px rgb(77, 77, 77),
@@ -177,9 +181,11 @@ body {
       5px 4px 1px rgb(36, 36, 36), 4px 5px 1px rgb(77, 77, 77),
       6px 5px 1px rgb(36, 36, 36), 5px 6px 1px rgb(77, 77, 77),
       7px 6px 1px rgb(36, 36, 36);
+
 }
 
 #tobtn {
+  border: none;
   display: block;
   position: fixed;
   bottom: 5%;
@@ -187,16 +193,14 @@ body {
   z-index: 99;
   font-size: 16px;
   font-weight: 700;
-  color: hsl(0, 0%, 100%);
+  color: #3c3836;
   cursor: pointer;
   border-radius: 12px;
-  background-color: hsla(0, 0%, 0%, 0.7);
+  background-color: #fbf1c7;
   width: 55px;
   height: 55px;
   text-align: center;
-  border-radius: 38px;
   cursor: pointer;
-  box-shadow: 0 0 4px rgba(26, 112, 161, 0.12), 0 2px 2px rgba(0, 0, 0, .08);
 }
 
 .title {
@@ -223,7 +227,7 @@ body {
   position: fixed;
   z-index: 99;
   cursor: pointer;
-  background-color: hsla(0, 0%, 0%, 0.7);
+  background-color: #83a598;
   padding: 2%;
   border-radius: 22px;
 
@@ -235,14 +239,13 @@ body {
   right: 1%;
   height: 40px;
   width: 40px;
-  filter: invert();
   background-color: hsl(0, 0%, 100%);
   fill:none;
   position: fixed;
   z-index: 99;
   cursor: pointer;
   padding: 1%;
-  border-radius: 22px;
+  border-radius: 12px;
   opacity: 0.7;
 }
 .centertext{
@@ -252,9 +255,9 @@ body {
   align-content: center;
   list-style-type: none;
   position: fixed;
-  background-color: hsla(0, 0%, 0%, 0.712);
+  background-color: hsla(0, 0%, 75%, 0.712);
   cursor: pointer;
-  border-radius: 22px;
+  border-radius: 18px;
   width: 55px;
   top: 13%;
 }
@@ -262,8 +265,8 @@ body {
   cursor: pointer;
   -webkit-font-smoothing: antialiased;
   font-weight: 700;
-  color: #000;
-  background-color: hsl(0, 0%, 100%);
+  color: rgb(255, 255, 255);
+  background-color: #83a598;
   width: 45px;
   height: 45px;
   z-index: 99;

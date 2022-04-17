@@ -13,20 +13,21 @@ const fetchSave = async (aurl) => {
 }
 
 const initprop = (props)=>{
-    
+    startOfWeek = dayjs().day(0).format('YYYY-MM-DD');
+    endOfWeek = dayjs().day(6).format('YYYY-MM-DD');
     group = props.id
     type = props.type
     if(type=="student"){
         thisweek = `https://intime.tsu.ru/api/web/v1/schedule/group?id=${group}&dateFrom=${startOfWeek}&dateTo=${endOfWeek}`
     }
     else if(type=="professor"){ 
-     thisweek = `https://intime.tsu.ru/api/web/v1/schedule/professor?id=${group}&dateFrom=${startOfWeek}&dateTo=${endOfWeek}`
+        thisweek = `https://intime.tsu.ru/api/web/v1/schedule/professor?id=${group}&dateFrom=${startOfWeek}&dateTo=${endOfWeek}`
     }
     fetchSave(thisweek);
 }
 //Big loader
 const loader = () => {
-    chrome.storage.local.get('properties', (response)=>{
+    chrome.storage.sync.get('properties', (response)=>{
         if(response.properties!=undefined){
             initprop(response.properties);
         }
@@ -44,7 +45,8 @@ chrome.storage.onChanged.addListener(function (changes, namespace) {
 // Refresh local data in periodic measures
 chrome.alarms.create('refresh', { periodInMinutes: 60*6 });
 chrome.alarms.onAlarm.addListener((alarm) => {
-    startOfWeek = dayjs().day(0).format('YYYY-MM-DD')
-    endOfWeek = dayjs().day(6).format('YYYY-MM-DD')
+    console.log(alarm);
+    console.log("Refreshing json");
+
     loader();
 });
