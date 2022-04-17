@@ -4,7 +4,8 @@
 
 
 :root body {
-  min-width: 400px;
+  min-width: 410px;
+  min-height: 800px;
 }
 
 :root body,
@@ -35,7 +36,6 @@ html {
 
 body {
   font-size: 14px;
-  height: 725px;
 
   font-family: Arial, Helvetica, sans-serif;
 
